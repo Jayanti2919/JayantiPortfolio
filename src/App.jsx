@@ -18,7 +18,9 @@ const App = () => {
             <Hero />          
           </div>
         </div>
+        <section id="about">
         <About/>
+        </section>
         <Tech/>
         <Experience/>
         <Works/>
