@@ -4,6 +4,7 @@ import {
     creator,
     web,
     javascript,
+    nextjs,
     typescript,
     html,
     css,
@@ -77,16 +78,8 @@ import {
       icon: javascript,
     },
     {
-      name: "TypeScript",
-      icon: typescript,
-    },
-    {
       name: "React JS",
       icon: reactjs,
-    },
-    {
-      name: "Redux Toolkit",
-      icon: redux,
     },
     {
       name: "Tailwind CSS",
@@ -109,12 +102,8 @@ import {
       icon: git,
     },
     {
-      name: "figma",
-      icon: figma,
-    },
-    {
-      name: "docker",
-      icon: docker,
+      name: "NextJS",
+      icon: nextjs,
     },
   ];
   
