@@ -21,8 +21,10 @@ const App = () => {
         <section id="about">
         <About/>
         </section>
-        <Tech/>
+        <section id="work">
         <Experience/>
+        </section>
+        <Tech/>
         <Works/>
         <Feedbacks/>
       </BrowserRouter>

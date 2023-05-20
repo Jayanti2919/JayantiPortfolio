@@ -8,7 +8,7 @@ import { SectionWrapper } from '../hoc'
 
 const ServiceCard = ({title, index, icon, desc}) => {
   return (
-    <div className=' relative z-0'>
+    <div>
     <Tilt>
 
       <motion.div variants={fadeIn("right", "spring", 0.5*index, 0.75)}
@@ -43,7 +43,7 @@ const About = () => {
       Welcome to my portfolio! I'm a versatile web developer experienced in front-end and back-end development. With a passion for creating engaging user experiences, I've successfully delivered multiple projects. My expertise includes HTML, CSS, JavaScript, React, Node.js, and databases like MongoDB, PostgreSQL and MySQL. I look forward to working with you on your next project.
       </motion.p>
 
-      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 pb-20 gap-10 '>
+      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10'>
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} icon={service.icon} desc={service.desc} {...service}/>
         ))}
