@@ -7,9 +7,9 @@ import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 
-const ProjectCard = ({ project, key }) => {
+const ProjectCard = ({ project, index }) => {
   return (
-    <motion.div variants={fadeIn("up", "spring", key * 0.5, 0.75)}>
+    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
       <Tilt
         options={{
           max: 45,
@@ -57,7 +57,7 @@ const ProjectCard = ({ project, key }) => {
         <div className='mt-4 flex flex-wrap gap-2'>
           {project.tags.map((tag) => (
             <p
-              key={`${key}-${tag.name}`}
+              key={`${index}-${tag.name}`}
               className={`text-[14px] ${tag.color}`}
             >
               #{tag.name}
@@ -72,7 +72,7 @@ const ProjectCard = ({ project, key }) => {
 const Works = () => {
   return (
     <div>
-      <motion.div>
+      <motion.div variants={textVariant()}>
         <p className={`${styles.sectionSubText} text-secondary`}>My</p>
         <h2 className={`${styles.sectionHeadText} text-white`}>Projects</h2>
       </motion.div>
@@ -93,7 +93,7 @@ const Works = () => {
 
       <div className="flex flex-wrap gap-16 mt-10 justify-start">
         {projects.map((project, index) => (
-          <ProjectCard project={project} key={index} />
+          <ProjectCard project={project} index={index} key={project.name}/>
         ))}
       </div>
     </div>
