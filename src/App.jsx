@@ -28,7 +28,11 @@ const App = () => {
         <section id="project">
         <Works />
         </section>
-        <Feedbacks/>
+        {/* <Feedbacks/> */}
+
+        <section id="contact">
+          <Contact/>
+        </section>
       </BrowserRouter>
   )
 }
