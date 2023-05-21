@@ -25,7 +25,9 @@ const App = () => {
         <Experience/>
         </section>
         <Tech/>
-        <Works/>
+        <section id="project">
+        <Works />
+        </section>
         <Feedbacks/>
       </BrowserRouter>
   )

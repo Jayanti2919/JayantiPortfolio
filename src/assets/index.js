@@ -4,6 +4,7 @@ import creator from "./creator.png";
 import mobile from "./mobile.png";
 import web from "./web.png";
 import github from "./github.png";
+import webicon from "./webicon.svg";
 import menu from "./menu.svg";
 import close from "./close.svg";
 
@@ -16,6 +17,8 @@ import html from "./tech/html.png";
 import javascript from "./tech/javascript.png";
 import mongodb from "./tech/mongodb.png";
 import nodejs from "./tech/nodejs.png";
+import tableau from "./tech/tableau.png";
+import Python from "./tech/Python.png";
 import reactjs from "./tech/reactjs.png";
 import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
@@ -27,8 +30,8 @@ import forage from "./company/forage-deloitte.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
+import clashofmodels from "./clashofmodels.png";
+import rippl from "./rippl.png";
 import tripguide from "./tripguide.png";
 
 export {
@@ -38,6 +41,7 @@ export {
   mobile,
   web,
   github,
+  tableau,
   menu,
   close,
   css,
@@ -46,6 +50,7 @@ export {
   git,
   html,
   javascript,
+  webicon,
   mongodb,
   nodejs,
   reactjs,
@@ -53,12 +58,13 @@ export {
   tailwind,
   typescript,
   threejs,
+  Python,
   meta,
   forage,
   starbucks,
   tesla,
-  carrent,
-  jobit,
+  clashofmodels,
+  rippl,
   tripguide,
   nextjs,
 };

@@ -6,6 +6,7 @@ import {
     javascript,
     nextjs,
     typescript,
+    Python,
     html,
     css,
     reactjs,
@@ -20,10 +21,11 @@ import {
     starbucks,
     tesla,
     forage,
-    carrent,
-    jobit,
+    clashofmodels,
+    rippl,
     tripguide,
     threejs,
+    tableau,
   } from "../assets";
   
   const navLinks = [
@@ -34,6 +36,10 @@ import {
     {
       id: "work",
       title: "Work",
+    },
+    {
+      id: "project",
+      title: "Projects",
     },
     {
       id: "contact",
@@ -105,6 +111,15 @@ import {
       name: "NextJS",
       icon: nextjs,
     },
+    {
+      name: "Python",
+      icon: Python,
+    },
+    {
+      name: "Tableau",
+      icon: tableau,
+    },
+
   ];
   
   const experiences = [
@@ -166,9 +181,9 @@ import {
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "Rippl",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "Web-based podcast platform that allows users to engage with both audio and video podcasts. Users may also upload their content and like their favourite podcasts.",
       tags: [
         {
           name: "react",
@@ -179,54 +194,31 @@ import {
           color: "green-text-gradient",
         },
         {
-          name: "tailwind",
+          name: "node",
           color: "pink-text-gradient",
         },
       ],
-      image: carrent,
-      source_code_link: "https://github.com/",
+      image: rippl,
+      source_code_link: "https://github.com/wishsagarks/Rippl",
+      live_link: "https://ripplpodcasts.live/",
     },
     {
-      name: "Job IT",
+      name: "Clash Of Models",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "A landing page for GDSC-KIIT's original product-based competition. It showcases everything you need to know about rewards.ai and the event, Clash of Models.",
       tags: [
         {
           name: "react",
           color: "blue-text-gradient",
         },
         {
-          name: "restapi",
-          color: "green-text-gradient",
-        },
-        {
-          name: "scss",
+          name: "tailwind",
           color: "pink-text-gradient",
         },
       ],
-      image: jobit,
-      source_code_link: "https://github.com/",
-    },
-    {
-      name: "Trip Guide",
-      description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-      tags: [
-        {
-          name: "nextjs",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "supabase",
-          color: "green-text-gradient",
-        },
-        {
-          name: "css",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
+      image: clashofmodels,
+      source_code_link: "https://github.com/GDSC-KIIT/ClashOfModels",
+      live_link: "https://clash-of-models.netlify.app/",
     },
   ];
   
