@@ -50,7 +50,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className={`${styles.paddingX} w-[100vw] flex items-center py-5 top-0 z-10 fixed ${activeid===''?"bg-transparent": "bg-primary"}`}>
+    <nav className={`${styles.paddingX} w-[100vw] flex items-center py-5 top-0 z-50 fixed ${activeid===''?"bg-transparent": "bg-primary"}`}>
       <div className='w-full items-center justify-between flex mx-auto max-w-7xl'>
         <Link
         to="/"
