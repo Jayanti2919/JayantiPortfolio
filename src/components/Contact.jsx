@@ -6,6 +6,7 @@ import { styles } from '../styles'
 import { EarthCanvas } from './canvas'
 import { SectionWrapper } from '../hoc'
 import { slideIn } from '../utils/motion'
+import { download, github, linkedin } from '../assets'
 
 const Contact = () => {
 
@@ -108,6 +109,11 @@ const Contact = () => {
             {loading ? "Sending..." : "Send"}
           </button>
         </form>
+        <div className='flex gap-6 h-fit mt-5'>
+            <img src={github} alt="github" className='h-9 w-9 cursor-pointer bg-black rounded-lg' onClick={()=>{window.open("https://github.com/Jayanti2919", "_blank")}}/>
+            <img src={linkedin} alt="linkedin" className='h-9 w-9 bg-white rounded-lg cursor-pointer' onClick={()=>{window.open("https://www.linkedin.com/in/jayantigoswami/", "_blank")}}/>
+            <img src={download} alt="resume" className='h-9 w-9 bg-white rounded-lg px-2 cursor-pointer' onClick={() => {window.open("https://docs.google.com/document/d/1vhBBqVtmcxwmmG0o1Ryg7bZCg9sMjlL0sQJxiv2tMHs/edit?usp=sharing", "_blank")}}/>
+        </div>
       </motion.div>
 
       <motion.div 
