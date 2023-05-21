@@ -57,6 +57,7 @@ const ProjectCard = ({ project, key }) => {
         <div className='mt-4 flex flex-wrap gap-2'>
           {project.tags.map((tag) => (
             <p
+              key={`${key}-${tag.name}`}
               className={`text-[14px] ${tag.color}`}
             >
               #{tag.name}
@@ -70,7 +71,7 @@ const ProjectCard = ({ project, key }) => {
 
 const Works = () => {
   return (
-    <>
+    <div>
       <motion.div>
         <p className={`${styles.sectionSubText} text-secondary`}>My</p>
         <h2 className={`${styles.sectionHeadText} text-white`}>Projects</h2>
@@ -95,7 +96,7 @@ const Works = () => {
           <ProjectCard project={project} key={index} />
         ))}
       </div>
-    </>
+    </div>
   );
 };
 

@@ -9,6 +9,12 @@ import { slideIn } from '../utils/motion'
 
 const Contact = () => {
 
+  // template_2emjbl3
+  // service_fbf7tx1
+  // 6mjsQ7dmiibcgbcqe
+
+  const formRef = useRef();
+
   const [form, setform] = useState({
     name: '',
     email: '',
@@ -17,25 +23,62 @@ const Contact = () => {
 
   const [loading, setloading] = useState(false)
 
-  const handleChange = (e) => {}
-  const handleSubmit = (e) => {}
+  const handleChange = (e) => {
+    const { target } = e;
+    const { name, value } = target;
+    setform({...form, [name]:value})
+  }
+
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setloading(true);
+
+    emailjs.send(
+      "service_fbf7tx1", 
+      "template_2emjbl3", 
+      {
+        from_name: form.name,
+        to_name: 'Jayanti',
+        from_email: form.email,
+        to_email: 'jayanti2919@gmail.com',
+        message: form.message,
+      },
+      "6mjsQ7dmiibcgbcqe",
+      )
+
+      .then(()=>{
+        setloading(false)
+        alert("Thank you for getting in touch. I will get back to you as soon as possible.")
+
+        setform({
+          name: '',
+          email: '',
+          message: '',
+        })
+      }, (error)=>{
+        alert("An error occurred!")
+        console.log(error)
+      })
+  }
 
   return (
-    <div className='xl:mt-12 flex flex-col-reverse xl:flex-row gap-10 overflow-hiddenrelative z-0'>
+    <div className='xl:mt-12 flex flex-col-reverse xl:flex-row gap-10 overflow-hidden'>
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
         className='flex-[0.75] rounded-lg bg-black-200 p-8'
       >
         <p className={`${styles.sectionSubText}`}>Get in Touch!</p>
-        <h3 className={`${styles.sectionHeadText}`}>Contact Me</h3>
+        <h3 className={`${styles.sectionHeadText}`}>Contact</h3>
 
-        <form action="" onSubmit={handleSubmit} className='flex flex-col gap-8 mt-12'>
+        <form onSubmit={handleSubmit} ref={formRef} className='flex flex-col gap-8 mt-12'>
           <label htmlFor="" className='flex flex-col '>
             <span className='mb-4 text-white '>Your Name</span>
             <input type="text" 
               placeholder="What's your name?"
               value={form.name}
-              onClick={handleChange}
+              onChange={handleChange}
+              name='name'
               className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-xl font-medium active:border-none outline-none'
             />
           </label>
@@ -44,16 +87,18 @@ const Contact = () => {
             <input type="text" 
               placeholder="What's your email?"
               value={form.email}
-              onClick={handleChange}
+              onChange={handleChange}
+              name='email'
               className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-xl font-medium active:border-none outline-none'
             />
           </label>
           <label htmlFor="" className='flex flex-col '>
             <span className='mb-4 text-white '>Message</span>
-            <textarea rows={5} cols={5} 
+            <textarea rows={5}
               placeholder="What's your message?"
               value={form.message}
-              onClick={handleChange}
+              onChange={handleChange}
+              name='message'
               className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-xl font-medium active:border-none outline-none'
             />
           </label>

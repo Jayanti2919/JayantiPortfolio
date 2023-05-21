@@ -7,12 +7,13 @@ import Experience from './components/Experience';
 import Works from './components/Works';
 import Feedbacks from './components/Feedbacks';
 import Contact from './components/Contact';
+import { StarsCanvas } from "./components/canvas";
 
 const App = () => {
 
   return (
       <BrowserRouter>
-        <div className="bg-primary relative z-0">
+        <div className="relative">
           <div className="bg-hero-pattern bg-no-repeat bg-cover bg-center">
             <Navbar />
             <Hero />          
@@ -30,8 +31,11 @@ const App = () => {
         </section>
         {/* <Feedbacks/> */}
 
-        <section id="contact">
+        <section id="contact" >
+          <div className="relative">
           <Contact/>
+          <StarsCanvas/>
+          </div>
         </section>
       </BrowserRouter>
   )
