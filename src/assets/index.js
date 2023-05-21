@@ -27,8 +27,8 @@ import threejs from "./tech/threejs.svg";
 import meta from "./company/writtenlyhub.png";
 import forage from "./company/forage-deloitte.png";
 
-import clashofmodels from "./clashofmodels.png";
-import rippl from "./rippl.png";
+import clashofmodels from "./clashofmodels.PNG";
+import rippl from "./rippl.PNG";
 
 export {
   logo,
