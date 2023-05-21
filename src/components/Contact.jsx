@@ -58,6 +58,7 @@ const Contact = () => {
           message: '',
         })
       }, (error)=>{
+        setloading(false)
         alert("An error occurred!")
         console.log(error)
       })
