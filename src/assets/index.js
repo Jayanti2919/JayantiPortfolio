@@ -28,11 +28,13 @@ import meta from "./company/writtenlyhub.png";
 import forage from "./company/forage-deloitte.png";
 
 import clashofmodels from "./clashofmodels.png";
+import tshirt from "./tshirt-customizer.png";
 import rippl from "./rippl.png";
 
 export {
   logo,
   backend,
+  tshirt,
   creator,
   mobile,
   web,

@@ -19,6 +19,7 @@ import {
     rippl,
     threejs,
     tableau,
+    tshirt,
   } from "../assets";
   
   const navLinks = [
@@ -173,6 +174,28 @@ import {
   ];
   
   const projects = [
+    {
+      name: "Tshirt Customizer",
+      description:
+        "Ai-powered tshirt customizer where you can change the color, add logos, add textures and even ask AI to generate new patterns and logos for you.",
+      tags: [
+        {
+          name: "threeJS",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "API",
+          color: "green-text-gradient",
+        },
+        {
+          name: "node",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: tshirt,
+      source_code_link: "https://github.com/Jayanti2919/threejs-ai-tshirt",
+      live_link: "https://tshirt-customizer-threejs.netlify.app/",
+    },
     {
       name: "Rippl",
       description:
