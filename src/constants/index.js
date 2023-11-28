@@ -20,6 +20,8 @@ import {
     threejs,
     tableau,
     tshirt,
+    singsys,
+    tradehive,
   } from "../assets";
   
   const navLinks = [
@@ -118,7 +120,19 @@ import {
   
   const experiences = [
     {
-      title: "STEM Intern",
+      title: "Web Development Intern",
+      company_name: "Singsys",
+      icon: singsys,
+      iconBg: "#383E56",
+      date: "Jun 2023 - Jul 2023",
+      points: [
+        "Working with React JS and Node JS to develop a full stack website.",
+        "Designing and implementing a database using MySQL.",
+        "Communicating progress to the lead and working with him on revisions.",
+      ],
+    },
+    {
+      title: "Virtual Intern",
       company_name: "Forage-Deloitte",
       icon: forage,
       iconBg: "#383E56",
@@ -155,25 +169,31 @@ import {
       company: "Acme Co",
       image: "https://randomuser.me/api/portraits/women/4.jpg",
     },
-    {
-      testimonial:
-        "I've never met a web developer who truly cares about their clients' success like Rick does.",
-      name: "Chris Brown",
-      designation: "COO",
-      company: "DEF Corp",
-      image: "https://randomuser.me/api/portraits/men/5.jpg",
-    },
-    {
-      testimonial:
-        "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-      name: "Lisa Wang",
-      designation: "CTO",
-      company: "456 Enterprises",
-      image: "https://randomuser.me/api/portraits/women/6.jpg",
-    },
   ];
   
   const projects = [
+    {
+      name: "Trade Hive",
+      description:
+        "Trade Hive brings all your stock market needs onto one platform. From trading to using the power of Machine Learning to predict next day prices, this is the ultimate forum.",
+      tags: [
+        {
+          name: "nextJS",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "mongoDB",
+          color: "green-text-gradient",
+        },
+        {
+          name: "lstm",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: tradehive,
+      source_code_link: "https://github.com/Samrat1507/Trade-Hive",
+      live_link: "https://trade-hive.netlify.app/",
+    },
     {
       name: "Tshirt Customizer",
       description:

@@ -26,10 +26,12 @@ import threejs from "./tech/threejs.svg";
 
 import meta from "./company/writtenlyhub.png";
 import forage from "./company/forage-deloitte.png";
+import singsys from './company/singsys2.jpg'
 
 import clashofmodels from "./clashofmodels.png";
 import tshirt from "./tshirt-customizer.png";
 import rippl from "./rippl.png";
+import tradehive from "./trade-hive.png";
 
 export {
   logo,
@@ -49,6 +51,7 @@ export {
   javascript,
   linkedin,
   webicon,
+  tradehive,
   mongodb,
   nodejs,
   download,
@@ -61,5 +64,6 @@ export {
   clashofmodels,
   rippl,
   nextjs,
+  singsys,
 };
 
