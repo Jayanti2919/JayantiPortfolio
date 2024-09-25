@@ -26,12 +26,14 @@ import threejs from "./tech/threejs.svg";
 
 import meta from "./company/writtenlyhub.png";
 import forage from "./company/forage-deloitte.png";
-import singsys from './company/singsys2.jpg'
+import singsys from './company/singsys2.jpg';
+import microsoft from './company/microsoft_logo.png';
 
 import clashofmodels from "./clashofmodels.png";
 import tshirt from "./tshirt-customizer.png";
 import rippl from "./rippl.png";
 import tradehive from "./trade-hive.png";
+import thirdeye from "./third-eye.png";
 
 export {
   logo,
@@ -49,6 +51,8 @@ export {
   git,
   html,
   javascript,
+  microsoft,
+  thirdeye,
   linkedin,
   webicon,
   tradehive,

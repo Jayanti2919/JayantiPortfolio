@@ -16,12 +16,14 @@ import {
     meta,
     forage,
     clashofmodels,
+    thirdeye,
     rippl,
     threejs,
     tableau,
     tshirt,
     singsys,
     tradehive,
+    microsoft,
   } from "../assets";
   
   const navLinks = [
@@ -120,6 +122,17 @@ import {
   
   const experiences = [
     {
+      title: "Software Engineering Intern",
+      company_name: "Microsoft",
+      icon: microsoft,
+      iconBg: "#E6DEDD",
+      date: "May 2024 - Jul 2024",
+      points: [
+        "Working with Python to develop AI-powered chatbots.",
+        "Explored prompt engineering for Large Language Models.",
+      ],
+    },
+    {
       title: "Web Development Intern",
       company_name: "Singsys",
       icon: singsys,
@@ -172,6 +185,28 @@ import {
   ];
   
   const projects = [
+    {
+      name: "ThirdEye",
+      description:
+        "ThirdEye is a decentralized video sharing platform that follows a hybrid approach between Web2 and Web3 technologies. It uses its own cryptocurrency called EYEs.",
+      tags: [
+        {
+          name: "nodejs",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "reactjs",
+          color: "green-text-gradient",
+        },
+        {
+          name: "golang",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: thirdeye,
+      source_code_link: "https://github.com/Jayanti2919/ThirdEye",
+      live_link: "",
+    },
     {
       name: "Trade Hive",
       description:
